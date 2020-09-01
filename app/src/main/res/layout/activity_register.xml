@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authenticate.RegisterActivity"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/regname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="FullName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/regemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="40dp" />
+    <EditText
+        android:id="@+id/regpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/regconfirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="40dp" />
+    <Button
+        android:id="@+id/syncBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFF59D"
+        android:text="Sync Now"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Here"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <ProgressBar
+        android:id="@+id/regprogressBar"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notes">
+    <uses-permission android:name="android.permission.INTERNET "/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_baseline_notes_24"
+        android:label="PhoneNotes"
+        android:roundIcon="@drawable/ic_baseline_notes_24"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".authenticate.RegisterActivity" />
+        <activity android:name=".authenticate.LoginActivity" />
+        <activity
+            android:name=".note.EditNote"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".note.AddNote"
+            android:label="@string/title_activity_add_note"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".note.NoteDetails"
+            android:label="@string/title_activity_note_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".note.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
